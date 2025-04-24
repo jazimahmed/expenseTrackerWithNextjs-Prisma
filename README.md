@@ -45,21 +45,42 @@ A full-stack MERN application to track daily, monthly, and categorized expenses.
 ### 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/jazimahmed/ExpenseTracker.git
-cd ExpenseTracker
+git clone https://github.com/jazimahmed/expenseTrackerWithNextjs-Prisma.git
+cd expenseTrackerWithNextjs-Prisma
 ```
 
+### 2. **Install Dependencies**
+
+```bash
+npm install
+# or
+yarn install
+```
+### 3. **Setup Environment Variables**
 Add the following in `.env` (env should under root folder):
 
 ```
-DATABASE_URL=your_mongodb_uri
-NEXTAUTH_SECRET=your_secret
-NEXT_PUBLIC_API_URL=yourapiurl
+DATABASE_URL="mongodb+srv://<username>:<password>@cluster.mongodb.net/dbname"
+NEXTAUTH_SECRET="your_nextauth_secret"
+NEXT_PUBLIC_API_URL="http://localhost:3000/api"
 ```
-### 3. **run the app**
+### 4. **Setup Prisma**
+
+```bash
+npx prisma generate
+npx prisma db push
+```
+### 5. **run the app**
 
 ```bash
 npm run dev
+# or
+yarn dev
+```
+### 6. **open the browser**
+
+```bash
+Go to: http://localhost:3000
 ```
 
 
