@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Expense Tracker App (Nextjs & Prisma)
 
-## Getting Started
+## 📸 Screenshots
 
-First, run the development server:
+![Dashboard Screenshot](https://i.ibb.co/k6W9bvCj/app-dash-2.png)
+![Mobile View or Second Screenshot](https://i.ibb.co/GQnBWLFK/image.png)
+
+---
+
+
+A full-stack MERN application to track daily, monthly, and categorized expenses. The app supports currency conversion, filtering, authentication(Nextauth), and detailed analytics with a modern UI.
+
+---
+
+## 🚀 Features
+
+- ✅ User registration and login (sesson based)
+- ✅ Add, edit, and delete expenses
+- ✅ Filter expenses by category, date range
+- ✅ Currency conversion (INR, LKR, USD, and more)
+- ✅ Monthly expense summary with year/month selector
+- ✅ Responsive UI with Tailwind CSS
+- ✅ Redux Toolkit for global state management
+- ✅ Protected routes and session based access
+- ✅ Dark mode UI (tailwind-based)
+- ✅ csv Download option
+- ✅ Smooth scrollable dropdowns for long currency lists
+- ✅ Loading indicators and user-friendly messages
+
+---
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend && Backend** Nextjs, Tailwind CSS, Redux Toolkit
+- **Database:** MongoDB with prisma
+- **Auth:** nextauth
+- **Other:** Axios, dotenv, bcrypt, Nextauth, recharts, toastify etc
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. **Clone the repo**
+
+```bash
+git clone https://github.com/jazimahmed/ExpenseTracker.git
+cd ExpenseTracker
+```
+
+Add the following in `.env` (env should under root folder):
+
+```
+DATABASE_URL=your_mongodb_uri
+NEXTAUTH_SECRET=your_secret
+NEXT_PUBLIC_API_URL=yourapiurl
+```
+### 3. **run the app**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🙌 Author
 
-To learn more about Next.js, take a look at the following resources:
+**Jazim Ahmed**  
+📧 mohamedjazim800@gmail.com  
+🔗 [GitHub](https://github.com/jazimahmed)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⭐ Give a Star!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you found this helpful or interesting, feel free to star the repo ✨
